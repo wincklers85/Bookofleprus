@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta name="theme-color" content="#13051f" />
+  <title>Book of Leprus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="bg-orbs"></div>
+    <header class="topbar">
+      <button id="infoBtn" class="smallBtn">INFO</button>
+      <div class="brand">
+        <span class="title">BOOK <b>OF</b> LEPRUS</span>
+        <span class="subtitle">mobile parody slot • demo</span>
+      </div>
+      <button id="soundBtn" class="smallBtn">🔊</button>
+    </header>
+
+    <main class="machine">
+      <div class="jackpotPanel">
+        <div class="jackpotLabel">TEMPIO DEL LEPRUS</div>
+        <div id="jackpotValue" class="jackpotValue">50.000</div>
+      </div>
+
+      <section class="reelFrame">
+        <div class="reelGlow"></div>
+        <div id="paylines"></div>
+        <div id="reels" class="reels"></div>
+      </section>
+
+      <section class="winPanel">
+        <div class="stat"><span>CREDITI</span><b id="credits">1000</b></div>
+        <div class="stat center"><span>VINCITA</span><b id="win">0</b></div>
+        <div class="stat"><span>PUNTATA</span><b id="bet">10</b></div>
+      </section>
+
+      <section class="controls">
+        <button id="betDown" class="controlBtn">−</button>
+        <button id="autoBtn" class="controlBtn">AUTO</button>
+        <button id="spinBtn" class="spinBtn">SPIN</button>
+        <button id="maxBtn" class="controlBtn">MAX</button>
+        <button id="betUp" class="controlBtn">+</button>
+      </section>
+    </main>
+
+    <div id="toast" class="toast"></div>
+
+    <div id="bonusOverlay" class="overlay hidden">
+      <div class="bonusCard">
+        <h1>BONUS LEPRUS!</h1>
+        <img id="bonusFace" src="assets/605EFED2-99DF-4419-898F-DBC059862823.jpeg" alt="Bonus" />
+        <p id="bonusText">Hai aperto il Manuale del Leprus.</p>
+        <button id="startBonus" class="goldBtn">AVVIA FREE SPINS</button>
+      </div>
+    </div>
+
+    <div id="templeOverlay" class="overlay hidden">
+      <div class="templeCard">
+        <h1>TEMPIO DEL LEPRUS</h1>
+        <p>Scegli una porta e scopri il moltiplicatore.</p>
+        <div id="doors" class="doors"></div>
+        <button id="closeTemple" class="goldBtn hidden">RITIRA PREMIO</button>
+      </div>
+    </div>
+
+    <div id="infoOverlay" class="overlay hidden">
+      <div class="infoCard">
+        <h2>Book of Leprus</h2>
+        <p>Slot demo scherzosa per mobile. Nessun denaro reale, solo crediti finti.</p>
+        <p>5 rulli, 3 righe, 10 linee. Il volto con il colletto rosso è Scatter/Bonus. 3 o più Scatter avviano i free spins con simbolo espandibile.</p>
+        <p>Il simbolo “Super Leprus” è Wild. 5 Scatter aprono il mini gioco del Tempio.</p>
+        <button id="closeInfo" class="goldBtn">CHIUDI</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
